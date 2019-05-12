@@ -65,9 +65,9 @@ through look to find
 
 # Task 3
 
-80) is the area code for fixed line telephones in Bangalore. Fixed line
-    numbers include parentheses, so Bangalore numbers have the form
-    (080)xxxxxxx.)
+The area code for fixed line telephones in Bangalore is “(080)”. Fixed
+line numbers include parentheses, so Bangalore numbers have the form
+(080)xxxxxxx.)
 
 Part A: Find all of the area codes and mobile prefixes called by people
 in Bangalore. - Fixed lines start with an area code enclosed in
