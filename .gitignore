@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 .idea/*
+
+git rm -r --cached myFolder
