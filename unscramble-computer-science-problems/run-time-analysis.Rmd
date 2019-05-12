@@ -88,7 +88,7 @@ Notation: $O(n^5)$. `max()`, two explicit `for` loops, and indexing through look
 
 # Task 3
 
-"(080)" is the area code for fixed line telephones in Bangalore.
+The area code for fixed line telephones in Bangalore is "(080)".
 Fixed line numbers include parentheses, so Bangalore numbers
 have the form (080)xxxxxxx.)
 
