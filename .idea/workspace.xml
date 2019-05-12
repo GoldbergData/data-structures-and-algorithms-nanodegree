@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6860566-48d8-4479-8317-88412c5410e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/P0/Task0.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P0/Task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P0/Task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P0/Task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P0/Task4.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P0/calls.csv" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/calls.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P0/texts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/texts.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble-computer-science-problems/Task0.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble-computer-science-problems/Task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble-computer-science-problems/Task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble-computer-science-problems/Task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble-computer-science-problems/Task4.py" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble-computer-science-problems/Task4.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,17 +20,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="494">
+              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="532">
+              <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -39,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="33" selection-end-column="3" />
+            <state relative-caret-position="513">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -48,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="72" selection-start-line="72" selection-end-line="76" selection-end-column="3" />
+            <state relative-caret-position="1311">
+              <caret line="70" column="114" selection-start-line="70" selection-start-column="114" selection-end-line="70" selection-end-column="114" />
               <folding>
                 <element signature="e#91#101#0" expanded="true" />
               </folding>
@@ -57,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="504">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
               <folding>
                 <element signature="e#91#101#0" expanded="true" />
               </folding>
@@ -94,12 +93,16 @@
         <option value="$PROJECT_DIR$/P0/Task2.py" />
         <option value="$PROJECT_DIR$/P0/Task3.py" />
         <option value="$PROJECT_DIR$/P0/Task4.py" />
+        <option value="$PROJECT_DIR$/unscramble-computer-science-problems/Task3.py" />
+        <option value="$PROJECT_DIR$/unscramble-computer-science-problems/Task2.py" />
+        <option value="$PROJECT_DIR$/unscramble-computer-science-problems/Task1.py" />
+        <option value="$PROJECT_DIR$/unscramble-computer-science-problems/Task0.py" />
         <option value="$PROJECT_DIR$/unscramble-computer-science-problems/Task4.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="834" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -108,7 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,14 +126,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -195,18 +199,20 @@
       <updated>1556857803744</updated>
       <workItem from="1556857806516" duration="8433000" />
       <workItem from="1557192245660" duration="5472000" />
-      <workItem from="1557627680365" duration="8310000" />
+      <workItem from="1557627680365" duration="8407000" />
+      <workItem from="1557691514252" duration="11000" />
+      <workItem from="1557691573552" duration="887000" />
+      <workItem from="1557695763893" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22215000" />
+    <option name="totallyTimeSpent" value="23249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20512821" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21245421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -220,13 +226,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50061053" side_tool="true" weight="0.31428573" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32142857" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4993895" weight="0.31428573" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.31257632" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="4" side_tool="true" weight="0.01831502" />
+      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="4" side_tool="true" visible="true" weight="0.01831502" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -273,22 +279,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="494">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="33" selection-end-column="3" />
+        <state relative-caret-position="513">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="72" selection-start-line="72" selection-end-line="76" selection-end-column="3" />
+        <state relative-caret-position="1311">
+          <caret line="70" column="114" selection-start-line="70" selection-start-column="114" selection-end-line="70" selection-end-column="114" />
           <folding>
             <element signature="e#91#101#0" expanded="true" />
           </folding>
@@ -297,18 +310,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="504">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
           <folding>
             <element signature="e#91#101#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unscramble-computer-science-problems/Task1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>

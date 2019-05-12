@@ -25,8 +25,3 @@ print(f"First record of texts, {texts[0][0]} texts {texts[0][1]} at time "
 
 print(f"First record of calls, {calls[0][0]} calls {calls[0][1]} at time "
       f"{calls[0][2]}, lasting {calls[0][3]} seconds.")
-
-"""
-Calculate Big O
-O(2) since we run two print statements irrespective of input.
-"""

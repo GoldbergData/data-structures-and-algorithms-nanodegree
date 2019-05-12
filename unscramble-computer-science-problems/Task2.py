@@ -26,9 +26,3 @@ max_call = calls[[call[3] for call in calls].index(str(max_duration))]
 
 print(f"{max_call[0]} spent the longest time, {max_duration} seconds, "
       f"on the phone on {max_call[2]}.")
-
-"""
-Calculate Big O
-max: https://stackoverflow.com/questions/5454030/how-efficient-is-pythons-max-function
-O(n + 2) n for max; 2 for subset and print
-"""

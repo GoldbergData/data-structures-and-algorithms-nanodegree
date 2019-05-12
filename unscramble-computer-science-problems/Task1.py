@@ -27,8 +27,3 @@ for text, call in zip(texts, calls):
         numbers.add(call[i])
 
 print(f"There are {len(numbers)} different telephone numbers in the records.")
-
-"""
-Calculate Big O
-O(n + 2n + 1) n for the first for loop; 2n for the second; 1 for print
-"""

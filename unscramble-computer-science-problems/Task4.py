@@ -44,9 +44,3 @@ potential_telemarketers = sorted(list(set(potential_telemarketers)))
 print("These numbers could be telemarketers: ")
 for m in potential_telemarketers:
     print(m)
-
-"""
-Calculate Big O
-regex: https://stackoverflow.com/questions/4378455/what-is-the-complexity-of-regular-expression
-O(5n + 4) 5n for for loops; 4 for other lines
-"""

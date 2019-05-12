@@ -69,9 +69,3 @@ bangalore_to_bangalore = len([call for call in bangalore_calls if call[
 percentage = round(bangalore_to_bangalore / total_calls, 4) * 100
 
 print(f"{percentage} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
-
-"""
-Calculate Big O
-regex: https://stackoverflow.com/questions/4378455/what-is-the-complexity-of-regular-expression
-O(5n + 8) 5n for for loops; 8 for other lines
-"""
