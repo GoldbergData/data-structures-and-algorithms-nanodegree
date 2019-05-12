@@ -5,11 +5,11 @@ It's ok if you don't understand how to read files.
 import csv
 import pandas as pd
 
-with open('P0/texts.csv', 'r') as f:
+with open('unscramble-computer-science-problems/texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
 
-with open('P0/calls.csv', 'r') as f:
+with open('unscramble-computer-science-problems/calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
