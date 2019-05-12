@@ -1,5 +1,4 @@
-Udacity Data Structures & Algorithms: Runtime Analysis for Unscramble
-Computer Science Problems
+Runtime Analysis for Unscramble Computer Science Problems
 ================
 Joshua Goldberg
 May, 12 2019

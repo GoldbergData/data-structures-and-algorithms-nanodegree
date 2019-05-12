@@ -1,5 +1,5 @@
 ---
-title: "Udacity Data Structures & Algorithms: Runtime Analysis for Unscramble Computer Science Problems"
+title: "Runtime Analysis for Unscramble Computer Science Problems"
 author: "Joshua Goldberg"
 date: "`r format(Sys.time(), '%B, %d %Y')`"
 always_allow_html: yes
