@@ -3,13 +3,12 @@ Read file into texts and calls.
 It's ok if you don't understand how to read files.
 """
 import csv
-import pandas as pd
 
-with open('unscramble-computer-science-problems/texts.csv', 'r') as f:
+with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
 
-with open('unscramble-computer-science-problems/calls.csv', 'r') as f:
+with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
@@ -37,7 +36,8 @@ received = [call[1] for call in calls]
 
 maybe_not_tele_mkt = set(zip(text_numbers, received))
 
-potential_telemarketers = [call for call in dialed if call not in maybe_not_tele_mkt]
+potential_telemarketers = [call for call in dialed if
+                           call not in maybe_not_tele_mkt]
 
 potential_telemarketers = sorted(list(set(potential_telemarketers)))
 

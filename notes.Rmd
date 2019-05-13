@@ -1,5 +1,5 @@
 ---
-title: "Notes"
+title: "Data Structures & Algorithms Notes"
 author: "Joshua Goldberg"
 date: "`r format(Sys.time(), '%B, %d %Y')`"
 always_allow_html: yes

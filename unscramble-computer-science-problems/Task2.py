@@ -3,11 +3,12 @@ Read file into texts and calls.
 It's ok if you don't understand how to read files
 """
 import csv
-with open('unscramble-computer-science-problems/texts.csv', 'r') as f:
+
+with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
 
-with open('unscramble-computer-science-problems/calls.csv', 'r') as f:
+with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
