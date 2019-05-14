@@ -25,22 +25,17 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
-dialed = set([call[0] for call in calls])
+dials = {call[0] for call in calls}
+receives = [call[1] for call in calls]
+real_people = set()
 
-text_numbers = []
-for text in texts:
-    text_numbers.append(text[0])
-    text_numbers.append(text[1])
+for text, receive in zip(texts, receives):
+    for i in range(0, 2):
+        real_people.add(text[i])
+    real_people.add(receive)
 
-received = [call[1] for call in calls]
+potential_telemarketers = {call for call in dials if call not in real_people}
+potential_telemarketers = sorted(list(potential_telemarketers))
 
-maybe_not_tele_mkt = set(zip(text_numbers, received))
-
-potential_telemarketers = [call for call in dialed if
-                           call not in maybe_not_tele_mkt]
-
-potential_telemarketers = sorted(list(set(potential_telemarketers)))
-
-print("These numbers could be telemarketers: ")
-for m in potential_telemarketers:
-    print(m)
+print(f"These numbers could be telemarketers: {potential_telemarketers}")
+print(f"Total potential telemarketers: {len(potential_telemarketers)}")

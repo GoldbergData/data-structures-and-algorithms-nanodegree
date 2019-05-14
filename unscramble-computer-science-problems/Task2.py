@@ -21,9 +21,19 @@ Print a message:
 during September 2016.".
 """
 
-max_duration = max([int(call[3]) for call in calls])
+dials = {call[0]: int(call[3]) for call in calls}
+receives = {call[1]: int(call[3]) for call in calls}
+receives_ex_dials = dict()
 
-max_call = calls[[call[3] for call in calls].index(str(max_duration))]
+for (k, v), (k2, v2) in zip(dials.items(), receives.items()):
+    if k in receives.keys():
+        dials[k] = v + receives[k]
+    if k2 not in dials.keys():
+        receives_ex_dials[k2] = v2
 
-print(f"{max_call[0]} spent the longest time, {max_duration} seconds, "
-      f"on the phone on {max_call[2]}.")
+dials.update(receives_ex_dials)
+
+max_phone = max(dials, key=lambda key: dials[key])
+
+print(f"{max_phone} spent the longest time, {dials[max_phone]} seconds, on the "
+      f"phone during September 2016.")

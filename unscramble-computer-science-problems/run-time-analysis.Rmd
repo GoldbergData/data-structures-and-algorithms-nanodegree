@@ -36,7 +36,19 @@ file.copy(from = "~/Downloads/", to = here::here(),
 
 The below runtime analyses are Worst Case Big-O approximations.
 
-# Task 0
+## Reading data
+
+Reading data is required for all the below tasks, so we will address it first.
+
+```{r}
+
+```
+
+Notation: $O(n^2)$
+
+- $O(n^2)$: Reading two files are based on inputs ([complexity-of-f-in-python](https://stackoverflow.com/questions/51801213/complexity-of-f-seek-in-python).
+
+## Task 0
 
 What is the first record of texts and what is the last record of calls?
 
@@ -44,13 +56,17 @@ What is the first record of texts and what is the last record of calls?
 print(f"First record of texts, {texts[0][0]} texts {texts[0][1]} at time "
       f"{texts[0][2]}.")
 
-print(f"First record of calls, {calls[0][0]} calls {calls[0][1]} at time "
-      f"{calls[0][2]}, lasting {calls[0][3]} seconds.")
+total_calls = len(calls) - 1
+
+print(f"Last record of calls, {calls[total_calls][0]} called {calls[total_calls][1]} "
+      f"at {calls[total_calls][2]}, lasting {calls[total_calls][3]} seconds.")
 ```
 
-Notation: $O(1)$. The operations are not dependent on iteration.
+Notation: $O(1)$
 
-# Task 1
+The operations are not dependent on iteration.
+
+## Task 1
 
 How many different telephone numbers are there in the records? 
 
@@ -65,28 +81,46 @@ for text, call in zip(texts, calls):
 print(f"There are {len(numbers)} different telephone numbers in the records.")
 ```
 
-Notation: $O(n)$. Though we have two explicit `for` loops, the inner loop is just a short-hand for extended code. In other words, it does not depend on the input ($n$).
+Notation: $O(n+logn)$
 
-# Task 2
+- $O(n+logn)$: Two explicit `for` loops. One is logarithmic.
+
+## Task 2
 
 Which telephone number spent the longest time on the phone during the period? Don't forget that time spent answering a call is also time spent on the phone.
 
 ```{python eval=FALSE}
-max_duration = max([int(call[3]) for call in calls])
+dials = {call[0]: int(call[3]) for call in calls}
+receives = {call[1]: int(call[3]) for call in calls}
+receives_ex_dials = dict()
 
-max_call = calls[[call[3] for call in calls].index(str(max_duration))]
+for (k, v), (k2, v2) in zip(dials.items(), receives.items()):
+    if k in receives.keys():
+        dials[k] = v + receives[k]
+    if k2 not in dials.keys():
+        receives_ex_dials[k2] = v2
 
-print(f"{max_call[0]} spent the longest time, {max_duration} seconds, "
-      f"on the phone on {max_call[2]}.")
+dials.update(receives_ex_dials)
+
+max_phone = max(dials, key=lambda key: dials[key])
+
+print(f"{max_phone} spent the longest time, {dials[max_phone]} seconds, on the "
+      f"phone during September 2016.")
 ```
 
-Notation: $O(n^5)$. `max()`, two explicit `for` loops, and indexing through look to find match. 
+Notation: $O(n^6)$
 
-- [how-efficient-is-pythons-max-function](https://stackoverflow.com/questions/5454030/how-efficient-is-pythons-max-function)
+- $O(n^2)$: `Two set()` comprehensions
 
-- [complexity-of-list-index-in-python](https://stackoverflow.com/questions/5913671/complexity-of-list-indexx-in-python).
+- $O(n)$: One explicit `for` loop (should iterating over `zip()` also be included? See task 4, which shows is $O(n)$.)
 
-# Task 3
+-  $O(n^2)$: Two `in` operations inside the `for` loop
+
+- $O(n)$: `max()` ([how-efficient-is-pythons-max-function](https://stackoverflow.com/questions/5454030/how-efficient-is-pythons-max-function))
+
+- Note that dictionary `update()` method is expected to be $O(1)$ ([time-complexity-of-python-dictionary-get-update-always-o1](https://stackoverflow.com/questions/52504598/time-complexity-of-python-dictionary-get-update-always-o1))
+
+## Task 3
 
 The area code for fixed line telephones in Bangalore is "(080)".
 Fixed line numbers include parentheses, so Bangalore numbers
@@ -135,35 +169,45 @@ print(f"{percentage} percent of calls from fixed lines in Bangalore are calls to
 
 ```
 
-Notation: $O(n^2 + nlog_n)$. We have two explicit `for` loops. Regex is typically $O(n)$ ([what-is-the-complexity-of-regular-expression](https://stackoverflow.com/questions/4378455/what-is-the-complexity-of-regular-expression)), but we are checking with an `if` statement, so no sequencing is needed. `sorted()` introduces $O(nlog_n)$, according to python [documentation](https://wiki.python.org/moin/TimeComplexity).
+Notation: $O(n + nlogn)$
 
-# Task 4
+- $O(n)$: One explicit `for` loop
+
+- Regex is typically $O(n)$ ([what-is-the-complexity-of-regular-expression](https://stackoverflow.com/questions/4378455/what-is-the-complexity-of-regular-expression)), but we are checking with an `if` statement, so no sequencing is needed.
+
+- `sorted()` introduces $O(nlogn)$, according to python [documentation](https://wiki.python.org/moin/TimeComplexity).
+
+## Task 4
 
 The telephone company wants to identify numbers that might be doing telephone marketing. Create a set of possible telemarketers: these are numbers that make outgoing calls but never send texts, receive texts or receive incoming calls.
 
 ```{python eval=FALSE}
-dialed = set([call[0] for call in calls])
+dials = {call[0] for call in calls}
+receives = [call[1] for call in calls]
+real_people = set()
 
-text_numbers = []
-for text in texts:
-    text_numbers.append(text[0])
-    text_numbers.append(text[1])
+for text, receive in zip(texts, receives):
+    for i in range(0, 2):
+        real_people.add(text[i])
+    real_people.add(receive)
 
-received = [call[1] for call in calls]
+potential_telemarketers = {call for call in dials if call not in real_people}
+potential_telemarketers = sorted(list(potential_telemarketers))
 
-maybe_not_tele_mkt = set(zip(text_numbers, received))
-
-potential_telemarketers = [call for call in dialed if call not in maybe_not_tele_mkt]
-
-potential_telemarketers = sorted(list(set(potential_telemarketers)))
-
-print("These numbers could be telemarketers: ")
-
-for m in potential_telemarketers:
-    print(m)
+print(f"These numbers could be telemarketers: {potential_telemarketers}")
+print(f"Total potential telemarketers: {len(potential_telemarketers)}")
 ```
 
-Notation: $n^6+nlog_n$. Five explicit `for` loops, `sorted()`, and operation on `zip` object results in $O(n)$ ([what-is-the-time-complexity-of-zip-in-python](https://stackoverflow.com/questions/36877715/what-is-the-time-complexity-of-zip-in-python)).
+Notation: $n^6+nlogn+logn$
 
+- $O(n^2)$: Two `set()` comprehension
 
+- $O(n)$: One `list()` comprehension
 
+- $O(n)$: One `in` operation inside `list()` comprehension
+
+- $O(n+logn)$: Two explicit `for` loops. One is logarithmic.
+
+- $O(nlogn)$: `sorted()`
+
+- $O(n)$: Iterating on `zip()` object ([what-is-the-time-complexity-of-zip-in-python](https://stackoverflow.com/questions/36877715/what-is-the-time-complexity-of-zip-in-python))

@@ -3,6 +3,10 @@ Read file into texts and calls.
 It's ok if you don't understand how to read files.
 """
 import csv
+import os
+
+os.chdir("unscramble-computer-science-problems")
+
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
@@ -10,7 +14,6 @@ with open('texts.csv', 'r') as f:
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
-
 
 """
 TASK 0:
@@ -23,5 +26,7 @@ Print messages:
 print(f"First record of texts, {texts[0][0]} texts {texts[0][1]} at time "
       f"{texts[0][2]}.")
 
-print(f"First record of calls, {calls[0][0]} calls {calls[0][1]} at time "
-      f"{calls[0][2]}, lasting {calls[0][3]} seconds.")
+total_calls = len(calls) - 1
+
+print(f"Last record of calls, {calls[total_calls][0]} called {calls[total_calls][1]} "
+      f"at {calls[total_calls][2]}, lasting {calls[total_calls][3]} seconds.")

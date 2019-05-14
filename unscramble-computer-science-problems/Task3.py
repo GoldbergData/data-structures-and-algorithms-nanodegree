@@ -57,9 +57,8 @@ for call in bangalore_dialed:
     elif re.search(r'(^[7|8|9])', call):
         called_areas.append(call[0:4])
     clean_calls = sorted(list(set(called_areas)))
-    print("The numbers called by people in Bangalore have codes:")
-    for call in clean_calls:
-        print(call)
+
+print(f"The numbers called by people in Bangalore have codes: {clean_calls}")
 
 total_calls = len(bangalore_calls)
 
@@ -68,4 +67,5 @@ bangalore_to_bangalore = len([call for call in bangalore_calls if call[
 
 percentage = round(bangalore_to_bangalore / total_calls, 4) * 100
 
-print(f"{percentage} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
+print(f"{percentage} percent of calls from fixed lines in Bangalore are calls "
+      f"to other fixed lines in Bangalore.")
