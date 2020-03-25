@@ -1,6 +1,6 @@
 # Data Structures & Algorithms
 
-This repo consists of my exercises, notes, and solutions to variest projects for Udacity's Data Structures & Algorithms Nanodegree.
+This repo consists of my exercises, notes, and solutions to variest projects for Udacity's Data Structures & Algorithms Nanodegree and other content related to the topic.
 
 ### Projects
 
