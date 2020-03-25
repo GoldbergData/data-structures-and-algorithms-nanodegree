@@ -50,6 +50,11 @@ file.copy(from = "~/Downloads/", to = here::here(),
 
 *Dont' optimize prematurely! Use simple and correct code.*
 
+# Python lists are essentially dynamic arrays
+
+"We will not get into all of the details, but the important thing you need to know for this course is the following: If you were to look under the hood, you would find that a Python list is essentially implemented like an array (specifically, it behaves like a dynamic array, if you're curious). In particular, the elements of a Python list are contiguous in memory, and they can be accessed using an index."
+
+
 
 
 
