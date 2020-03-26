@@ -16,10 +16,6 @@ def merge_sort(list):
     if len(right) > 1:
         right = merge_sort(right)
 
-    print(left)
-    print(right)
-    print('*****')
-
     rval = []
     i, j = 0, 0
     while i < len(left) and j < len(right):
