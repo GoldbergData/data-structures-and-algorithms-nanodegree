@@ -36,8 +36,7 @@ test_array_3 = [2, 6, 3, 2, 4]
 
 test_array_4 = [random.randint(1, 100) for _ in range(10)]
 
-
 selection_sort(test_array)
 selection_sort(test_array_2)
 selection_sort(test_array_3)
-selection_sort(test_array_4)
+print(selection_sort(test_array_4))
