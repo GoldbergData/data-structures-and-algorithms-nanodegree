@@ -7,6 +7,7 @@
 # Stack
 # Queue
 # Set
+# Tree
 # HashMap
 
 # Advance Topics
